@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "t-bot"
+packages = [{ include = "t_bot" }]
+version = "0.1.0"
+description = "Мой первый бот без головной боли"
+authors = ["Evan Gette <gette735@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "^20.0"
+python-dotenv = "^1.0.0"
+aiogram = "^3.18.0"
+openai = "^1.66.2"
+dotenv = "^0.9.9"
+redis = "^5.2.1"
+mypy = "^1.15.0"
+
+[tool.poetry.scripts]
+start = "t_bot.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
